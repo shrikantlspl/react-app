@@ -1,5 +1,5 @@
 import React from 'react';
-import video from "../Assets/Steel Shots Making Process Rotocast.mp4";
+import video from "../Assets/Steel Shots Making Process.mp4";
 
 const Introvideo = () => {
   return (
