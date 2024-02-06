@@ -69,7 +69,7 @@ const App = () => {
   }, []);
 
   return (
-    <Router >
+    <Router basename={process.env.PUBLIC_URL}>
       <Helmet>
         <title>Rotocast Steel Shot: Unleashing Performance Across Industries</title>
         <meta name="description" content="Elevate your surface prep, shot peening, & blasting with Rotocast, India's leading steel shot manufacturer. Explore high-quality media, custom solutions, & expert support. Discover how we can empower your industry!" />
