@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-app/static/css/main.1ee0a196.css",
-    "main.js": "/react-app/static/js/main.82e6bfff.js",
+    "main.js": "/react-app/static/js/main.044475c1.js",
     "static/media/Steel Shots Making Process.mp4": "/react-app/static/media/Steel Shots Making Process.15262b7492b3b2eb3aa2.mp4",
     "static/media/Steel Shots product slider.gif": "/react-app/static/media/Steel Shots product slider.ae15714c2d10e255252d.gif",
     "static/media/Steel Shots Blog image.gif": "/react-app/static/media/Steel Shots Blog image.06102c9876e042f71d6d.gif",
@@ -23,10 +23,10 @@
     "static/media/rotocast-logo.png": "/react-app/static/media/rotocast-logo.43adcc36abffd45713ec.png",
     "index.html": "/react-app/index.html",
     "main.1ee0a196.css.map": "/react-app/static/css/main.1ee0a196.css.map",
-    "main.82e6bfff.js.map": "/react-app/static/js/main.82e6bfff.js.map"
+    "main.044475c1.js.map": "/react-app/static/js/main.044475c1.js.map"
   },
   "entrypoints": [
     "static/css/main.1ee0a196.css",
-    "static/js/main.82e6bfff.js"
+    "static/js/main.044475c1.js"
   ]
 }
