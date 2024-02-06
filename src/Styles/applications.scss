@@ -1,0 +1,71 @@
+@import "colors";
+
+.application-container {
+    background-color: $white;
+    // width: 100%;
+    min-height: 100vh;
+
+    .application-intro {
+        // width: 100vw;
+        display: flex;
+        padding: 5%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow-x: hidden;
+
+        
+
+        p {
+            font-size: 19px;
+            font-family: $text;
+            line-height: 1.9;
+        }
+    }
+
+    .applications {
+        margin: 2rem 0;
+        border-top: 1px solid rgb(189, 189, 189);
+        border-bottom: 1px solid rgb(189, 189, 189);
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+
+        // width: 100%;
+        .application {
+            background-color: #F0F0F0;
+            display: flex;
+            // gap: 3rem;
+            margin: 2rem 0;
+            align-items: center;
+            border-radius: 10px;
+            overflow: hidden;
+
+            img {
+                width: 350px;
+                height: 350px;
+                object-fit: cover;
+            }
+            h2 {
+                padding: 0 2rem;
+
+                font-size: 19px;
+                font-family: $text;
+                line-height: 1.9;
+            }
+            p {
+                font-size: 19px;
+                font-family: $text;
+                line-height: 1.9;
+                margin-bottom: 2rem;
+                padding: 0 2rem;
+            }
+            h3 {
+
+                font-size: 19px;
+                font-family: $text;
+                line-height: 1.9;
+            }
+        }
+    }
+}

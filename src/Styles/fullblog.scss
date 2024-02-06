@@ -1,0 +1,48 @@
+@import "colors";
+
+.productdetail-container {
+    background-color: $white;
+    min-height: 100vh;
+
+    p,
+    h3 {
+        font-size: 19px;
+        font-family: $text;
+        line-height: 1.9;
+    }
+
+    .productdetail {
+        // width: 100vw;
+        display: flex;
+        padding: 3rem;
+        flex-direction: row;
+        gap: 3rem;
+        align-items: center;
+        overflow-x: hidden;
+
+        img {
+            width: 50%;
+        }
+    }
+
+    .moreproductdetail {
+        display: flex;
+        padding: 0 3rem 3rem 3rem;
+        
+        .ChemicalComposition,
+        .Hardness,
+        .Microstructure{
+            display: flex;
+            flex-direction: column;
+            width: 33%;
+            padding: 0 3rem;
+        }
+        .Hardness{
+            border-left: 1px solid rgb(206, 206, 206);
+            border-right: 1px solid rgb(206, 206, 206);
+
+        }
+
+    }
+
+}

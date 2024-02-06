@@ -1,0 +1,48 @@
+@import "colors.scss";
+
+
+.intro {
+    // height: calc(100vh - 50px);
+    height: 100vh;
+
+
+    video {
+        width: 100%;
+        // margin-top: -50px;
+        height: 100vh;
+        object-fit: cover;
+    }
+
+    div {
+        width: 100%;
+        // height: calc(100vh - 50px);
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.658);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+
+        h1 {
+            width: 80%;
+            font: 300 54px "Montserrat", sans-serif;
+            font-weight: 700;
+            color: $white;
+            text-align: center;
+        }
+
+        p {
+            width: 80%;
+            text-align: center;
+
+            font: 500 20px $text;
+            color: $white;
+            letter-spacing: 3px;
+            line-height: 1.4;
+         
+        }
+    }
+}

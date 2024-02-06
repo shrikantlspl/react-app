@@ -1,0 +1,28 @@
+@import "colors";
+
+.FullBlog-container {
+    background-color: $white;
+    min-height: 100vh;
+
+    p,
+    h5 {
+        font-size: 19px;
+        font-family: $text;
+        line-height: 1.9;
+    }
+
+    .FullBlog {
+        // width: 100vw;
+        display: flex;
+        padding: 3rem;
+        flex-direction: column;
+        gap: 3rem;
+        align-items: center;
+        overflow-x: hidden;
+
+        img {
+            width: 100%;
+        }
+    }
+
+}

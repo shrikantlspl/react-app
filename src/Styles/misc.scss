@@ -1,0 +1,189 @@
+@import "colors";
+
+.cursor {
+  width: 26px;
+  height: 26px;
+  border: 2px solid $white;
+  border-radius: 50%;
+  position: absolute;
+  transition: transform 0.3s;
+  pointer-events: none;
+  z-index: 1200;
+  mix-blend-mode: difference;
+}
+
+.cursorHover {
+  transform: scale(3);
+  border: none;
+  box-shadow: 0 0 10px $white;
+}
+
+.cursorHoverMini {
+  transform: scale(0.5);
+  box-shadow: 0 0 20px $white;
+}
+
+.logo {
+  position: fixed;
+  top: 2rem;
+  left: 2rem;
+  width: 12rem;
+z-index: 10;
+  img {
+    width: 100%;
+    filter: drop-shadow(3px 3px 5px #0000006e);
+  }
+}
+
+.franchiseBtn {
+  text-decoration: none;
+  background-color: white;
+  mix-blend-mode: difference;
+  color: black;
+  position: fixed;
+  top: 2rem;
+  right: 5rem;
+  letter-spacing: 2px;
+  font: 700 14px $text;
+  padding: 0.7rem 1rem;
+  border: none;
+  border-radius: 7px;
+  transform-origin: bottom;
+  transition: transform 0.5s;
+  z-index: 10;
+
+  &:hover {
+    transform: skewX(-10deg);
+  }
+}
+.nav-bg{
+  position: fixed;
+  top: 0;
+  right: 0;
+  backdrop-filter: blur(20px);
+  transition: all 1s;
+  &.scrolled {
+    
+
+      background-color: rgba(0, 0, 0, 0.295);
+      width: 100vw;
+      height: 100px;
+      // position: relative;
+
+    }
+  }
+
+nav {
+  // background-color: rgb(148, 148, 148);
+  color: rgb(255, 255, 255);
+  position: fixed;
+  top: 2rem;
+  right: 15rem;
+  letter-spacing: 2px;
+  font: 700 14px $text;
+  // border: none;
+  // background-color: black;
+
+  
+  .sidebar {
+  backdrop-filter: blur(20px);
+    background-color: rgba(0, 0, 0, 0.87);
+    color: rgb(255, 255, 255);
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 80%;
+    letter-spacing: 2px;
+    font: 700 14px $text;
+    // border: none;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    display: none;
+    
+    .crossicon {
+      font-size: 2rem;
+      position: absolute;
+      top: 2rem;
+      right: 2.5rem;
+    }
+  }
+
+
+  ul {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    mix-blend-mode: difference;
+
+    .menueicon {
+      margin-left: 5rem;
+      display: none;
+      font-size: 2rem;
+    }
+
+    .link-style {
+      text-decoration: none;
+      color: white; /* Set your desired color */
+      position: relative; /* Add position relative to create space for the pseudo-element */
+      
+    }
+    
+    .link-style::before {
+      content: ""; /* Add an empty pseudo-element */
+      position: absolute;
+      width: 90%; /* Set the width to cover the entire link */
+      height: 2px; /* Set the height to create an underline */
+      bottom: 0; /* Position at the bottom */
+      background-color: white; /* Set your desired color */
+      transform: scaleX(0); /* Initially set the scale to 0 to hide the underline */
+      transform-origin: bottom left; /* Set the transform origin to bottom left */
+      transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
+    }
+    
+    .link-style:hover::before {
+      transform: scaleX(1); /* On hover, expand the underline to full width */
+    }
+    
+    li {
+      padding: 0.7rem .5rem;
+      transition: transform 0.5s;
+      transform-origin: bottom;
+
+
+
+      &:hover {
+        transform: skewX(-10deg);
+
+      }
+
+
+      a {
+        text-decoration: none;
+        color: $white;
+        filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.8));
+      }
+
+    }
+  }
+
+}
+
+.scrollBtn {
+  position: absolute;
+  left: 50%;
+  bottom: 5rem;
+  transform: translateX(-50%);
+  color: $white;
+  font-size: 4rem;
+  animation: mouseScrollAnimation 0.5s linear infinite alternate;
+}
+
+@keyframes mouseScrollAnimation {
+  to {
+    transform: translate(-50%, -10px);
+  }
+}

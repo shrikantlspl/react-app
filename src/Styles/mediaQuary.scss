@@ -1,0 +1,250 @@
+@import "colors";
+
+@media screen and (max-aspect-ratio: 13/10) {
+  .intro {
+    height: 100vh;
+
+    video {
+      margin-top: 0%;
+      height: 100vh;
+      object-fit: cover;
+    }
+
+    div {
+      height: inherit;
+    }
+  }
+}
+
+@media screen and (max-width: 820px) {
+
+
+  footer {
+    padding: 13rem 0;
+    grid-template-columns: 1fr;
+
+    h1 {
+      font-size: 40px;
+      text-align: center;
+    }
+
+    aside {
+      align-items: center;
+    }
+
+    div {
+      padding: 2rem;
+      align-items: center;
+
+      &:last-of-type {
+        align-items: center;
+      }
+    }
+  }
+
+  .stack {
+    flex-wrap: wrap;
+    height: 100%;
+  }
+
+  // ----------------------------------------------------- Header
+
+  .header-contaier {
+    font: 300 40px $heading;
+
+  }
+
+  // --------------------------------------------------AboutUs
+  .aboutus {
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center !important;
+
+
+    .content,
+    .img-container {
+      width: 90% !important;
+      text-align: center;
+    }
+  }
+
+  // --------------------------------------------------Products
+  .product-intro {
+    flex-direction: column !important;
+    align-items: center !important;
+
+    .content,
+    .image {
+      width: 90% !important;
+      text-align: center;
+    }
+  }
+
+  .products {
+    justify-content: center !important;
+    align-items: center !important;
+
+
+    img {
+      width: 100% !important;
+    }
+
+    p {
+
+      text-align: center;
+    }
+  }
+
+  // --------------------------------------------------procuct detail
+  .productdetail {
+    // width: 100vw;
+
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 100%;
+    }
+  }
+  .moreproductdetail {
+flex-direction: column;   
+//  padding: 2rem;
+    
+    .ChemicalComposition,
+    .Hardness,
+    .Microstructure{
+        display: flex;
+        flex-direction: column;
+        width: 100% !important;
+        padding: 0 !important;
+    }
+    .Hardness{
+        border-left: none !important;
+        border-right: none !important;
+
+    }
+
+}
+
+  // --------------------------------------------------Application
+  .application-intro {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  .application {
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center !important;
+
+
+    img {
+      width: 100% !important;
+    }
+
+    h2 {
+      text-align: center;
+
+    }
+
+    p {
+      text-align: center;
+    }
+
+    // -----------------------------------------------------blog
+
+    .BlogBox {
+      img {
+        width: 80%;
+      }
+    }
+
+    // -------------------------------------------------------Contact us  Form
+
+    form {
+      width: 80%;
+    }
+
+
+  }
+
+  @media screen and (max-width: 1050px) {
+    .franchiseBtn {
+      top: unset;
+      right: unset;
+      left: 50%;
+      bottom: 1rem;
+      transform: translateX(-50%);
+
+      &:hover {
+        transform: translateX(-50%) skewX(-10deg);
+      }
+    }
+
+    .hideonsmall {
+      display: none;
+
+      &:nth-child(6) {
+        display: block;
+        position: absolute;
+        left: 4rem;
+      }
+    }
+
+    // ------------------------------------------------- nav bg
+
+    .nav-bg {
+      display: none;
+
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    p {
+      font-size: 16px;
+    }
+
+    h1 {
+      font-size: 40px !important;
+    }
+
+    .section {
+      padding: 2rem;
+
+      h3 {
+        font-size: 40px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
+
+    footer {
+      padding: 7rem 0;
+
+      h1 {
+        font-size: 25px;
+      }
+
+      div {
+        padding: 0;
+      }
+    }
+
+    .stack {
+      flex-wrap: wrap;
+      height: 100%;
+
+      .box {
+        width: 35%;
+      }
+    }
+  }
+
+  .header-contaier {
+    font: 300 20px $heading;
+
+  }
+}

@@ -1,0 +1,74 @@
+@import "colors";
+
+.product-container {
+    background-color: $white;
+    // width: 100%;
+    min-height: 100vh;
+
+    .product-intro {
+        // width: 100vw;
+        display: flex;
+        padding: 5%;
+        flex-direction: row;
+        gap: 2%;
+        align-items: center;
+        overflow-x: hidden;
+
+        .content {
+            width: 50%;
+
+            p {
+                font-size: 19px;
+                font-family: $text;
+                line-height: 1.9;
+            }
+        }
+
+        .image {
+            width: 50%;
+            transition: all .5s;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .products {
+        border-top: 1px solid rgb(189, 189, 189);
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        padding: 5%;
+        gap: 3rem;
+
+        // width: 100%;
+        a {
+            text-decoration: none;
+
+
+            .product {
+                background-color: #F0F0F0;
+                border-radius: 10px;
+                overflow: hidden;
+
+                &:hover {
+                    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+                }
+
+                img {
+                    width: 350px;
+                }
+
+                h3 {
+                    color: black;
+                    font-size: 19px;
+                    font-family: $text;
+                    line-height: 1.9;
+                    margin: 1rem;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,70 @@
+@import "colors.scss";
+
+.slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+
+   
+
+    .stack {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    // flex-wrap:wrap;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+   
+
+
+        .box {
+            font-size: 1vw;
+            // width: 8vw;
+            // height: 8vw;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid white;
+            color: white;
+            text-align: center;
+            transition: all 0.5s ease-in-out;
+            padding: 2%;
+            margin: 2%;
+
+            p {
+                line-height: 1.2;
+            }
+
+            &:hover {
+                background-color: white;
+                border: 1px solid #0000b4;
+                color: #000;
+            }
+        }
+   
+        .box-1 {
+
+            span {
+                font-size: 70%;
+            }
+        }
+        
+        .box b {
+            font-size: 100%;
+            &:nth-child(1) {
+                font-size: 2vw;
+            }
+        }
+
+        .box span {
+            font-weight: 700;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+    }
+}
