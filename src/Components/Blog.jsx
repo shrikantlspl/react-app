@@ -657,7 +657,7 @@ const blogData = [
   
       <h2>Material Advancements Push Boundaries:</h2><br />
       <p>
-        <strong>Nanotechnology Revolution:</strong> Incorporating nanoparticles into the shot material could enhance wear resistance, fatigue life, and other critical properties.
+        <strong>Nanotechnology Revolution :</strong> Incorporating nanoparticles into the shot material could enhance wear resistance, fatigue life, and other critical properties.
       </p>
       <p>
         <strong>Composite Materials on the Horizon:</strong> Exploring composites combining steel with other elements promises unique properties tailored to specific blasting needs.
